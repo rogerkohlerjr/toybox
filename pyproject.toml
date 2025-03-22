@@ -1,0 +1,23 @@
+[project]
+name = "toybox"
+version = "0.1.0"
+description = "Collecting toys"
+readme = "README.md"
+authors = [
+    { name = "rkohler", email = "roger.kohlerjr@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+toybox = "toybox:mytoys"
+
+[build-system]
+requires = ["uv_build>=0.6.6,<0.7"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "requests>=2.32.3",
+    "twine>=6.1.0",
+]
