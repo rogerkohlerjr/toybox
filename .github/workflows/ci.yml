@@ -15,6 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v3
+      - uses: astral-sh/ruff-action@v3
       - name: Ruff lint
         run: uv run ruff check .
       - name: Ruff format
